@@ -23,7 +23,7 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 4.53
+  m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 1, g: 1, b: 1, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 29db93d1f40af02498ba3efed0a55e2d,
+  m_LightingDataAsset: {fileID: 112000000, guid: c0e4eb5755b333b419bcd8249b302df9,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -235,37 +235,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &394922334 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3040153228350584785, guid: fa227abe428bd0e41a5b7a920c911c2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1130553014}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &394922341 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3040153228350584781, guid: fa227abe428bd0e41a5b7a920c911c2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1130553014}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394922334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &394922344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 394922334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01f69dc1cb084aa42b2f2f8cd87bc770, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 394922341}
 --- !u!1001 &457400939
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -491,18 +460,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &644130311 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 950327858043998039, guid: 7e9d81bc146c48d4086ee47c6f8d7481,
-    type: 3}
-  m_PrefabInstance: {fileID: 457400939}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &656376281
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,76 +698,11 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1433209341}
-    - target: {fileID: 3040153227203721929, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_StartingSelectedInteractable
-      value: 
-      objectReference: {fileID: 644130311}
-    - target: {fileID: 3040153228083934702, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228083934702, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_ValidColorGradient.key1.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228083934702, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_ValidColorGradient.key1.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228083934702, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_ValidColorGradient.key1.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228083934702, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_ValidColorGradient.m_Mode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3040153228186567560, guid: fa227abe428bd0e41a5b7a920c911c2a,
         type: 3}
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 1433209341}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_ValidColorGradient.key0.a
-      value: 0.39607844
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_ValidColorGradient.key1.a
-      value: 0.39607844
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_InvalidColorGradient.atime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_InvalidColorGradient.key0.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_InvalidColorGradient.key1.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3040153228322908386, guid: fa227abe428bd0e41a5b7a920c911c2a,
-        type: 3}
-      propertyPath: m_InvalidColorGradient.m_Mode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3040153228350584783, guid: fa227abe428bd0e41a5b7a920c911c2a,
         type: 3}
       propertyPath: m_RootOrder
@@ -871,8 +763,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1488887650, guid: fa227abe428bd0e41a5b7a920c911c2a, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa227abe428bd0e41a5b7a920c911c2a, type: 3}
 --- !u!1001 &1280587808
 PrefabInstance:
