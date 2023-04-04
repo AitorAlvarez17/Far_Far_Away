@@ -1535,6 +1535,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3040153228350584783}
+  - component: {fileID: 394922343}
   - component: {fileID: 3040153228350584778}
   - component: {fileID: 3040153228350584781}
   - component: {fileID: 3040153228350584780}
@@ -1565,6 +1566,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -180.88, z: 0}
+--- !u!114 &394922343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3040153228350584785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017c5e3933235514c9520e1dace2a4b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ActionAssets:
+  - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
 --- !u!114 &3040153228350584778
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1706,7 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 3040153228350584781}
-  m_MoveSpeed: 2.48
+  m_MoveSpeed: 2.5
   m_EnableStrafe: 1
   m_UseGravity: 1
   m_GravityApplicationMode: 0
@@ -1761,7 +1776,7 @@ CharacterController:
   m_GameObject: {fileID: 3040153228350584785}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Height: 2.04
   m_Radius: 0.34
@@ -1769,7 +1784,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -1.63, z: 0}
+  m_Center: {x: 0, y: -1.6, z: 0}
 --- !u!1 &3040153228434349872
 GameObject:
   m_ObjectHideFlags: 0
