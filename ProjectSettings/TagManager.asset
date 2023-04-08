@@ -18,6 +18,7 @@ TagManager:
   - Wood
   - gun
   - Enemy
+  - Floor
   layers:
   - Default
   - TransparentFX
