@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 
 public class ShowMenuOnPress : MonoBehaviour
 {
-    public Transform head;
-    public float spawnDistance = 2f;
+    [SerializeField] private Transform head;
+    [SerializeField] private float spawnDistance = 2f;
+    [SerializeField] private GameObject menu;
 
-    public GameObject menu;
-    public InputActionProperty showButton;
+    [SerializeField] private InputActionProperty showButton;
 
     private void Update()
     {
