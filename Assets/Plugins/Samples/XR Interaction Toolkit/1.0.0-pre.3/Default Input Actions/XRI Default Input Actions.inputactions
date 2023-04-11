@@ -488,7 +488,7 @@
                 {
                     "name": "",
                     "id": "1415a204-4a7a-4f99-a5dc-0972fb3a21df",
-                    "path": "<XRController>{LeftHand}/menuButton",
+                    "path": "<XRController>{LeftHand}/joystickClicked",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

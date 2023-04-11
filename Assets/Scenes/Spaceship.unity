@@ -2364,12 +2364,6 @@ Transform:
   m_Father: {fileID: 247811137}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1359502679 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3040153228350584783, guid: fa227abe428bd0e41a5b7a920c911c2a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1130553014}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1379977480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3109,8 +3103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcc409e80dc7dd74e82753300d3cdca0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  head: {fileID: 1359502679}
-  spawnDistance: 2
+  head: {fileID: 73788662}
+  spawnDistance: 4
   menu: {fileID: 1890956435}
   showButton:
     m_UseReference: 1
@@ -3197,7 +3191,7 @@ RectTransform:
   m_GameObject: {fileID: 1890956435}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.007672013, y: 0.007672013, z: 0.007672013}
+  m_LocalScale: {x: 0.0050273933, y: 0.0050273933, z: 0.0050273933}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1011535117}
