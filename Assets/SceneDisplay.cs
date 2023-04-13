@@ -15,16 +15,16 @@ public class SceneDisplay : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void ResetText()
-    {
-        controller.Randomize();
-        Debug.Log("Reseting Text");
-        for(int i = 0; i < controller.scenes.Count; i++)
-        {
+    //public void ResetText()
+    //{
+    //    controller.Randomize();
+    //    Debug.Log("Reseting Text");
+    //    for(int i = 0; i < controller.scenes.Count; i++)
+    //    {
             
-            text.text += controller.scenes[i].name +". ";
+    //        text.text += controller.scenes[i].name +". ";
          
-        }
-        Debug.Log(text.text);
-    }
+    //    }
+    //    Debug.Log(text.text);
+    //}
 }
