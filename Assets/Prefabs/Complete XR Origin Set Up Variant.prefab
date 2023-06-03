@@ -65,7 +65,7 @@ PrefabInstance:
     - target: {fileID: 6947604102996551011, guid: 4e660da2419d1614198b2c073ddf863d,
         type: 3}
       propertyPath: m_Name
-      value: Complete XR Origin Set Up
+      value: Complete XR Origin Set Up Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e660da2419d1614198b2c073ddf863d, type: 3}
