@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 492725e3ca4407245b1d2525206217b6, type: 3}
-  m_Name: FlashStays
+  m_Name: AsteroidMinigame
   m_EditorClassIdentifier: 
   called: 0
   listeners: []
