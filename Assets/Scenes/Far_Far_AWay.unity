@@ -4853,6 +4853,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   events:
   - {fileID: 11400000, guid: 5f942955280c32041a9610adb94278bd, type: 2}
+  - {fileID: 11400000, guid: 8f94a1981ceaa9449aad0ab263cbd7a3, type: 2}
+  - {fileID: 11400000, guid: b8391162429c0234aba87fb1c13f472f, type: 2}
 --- !u!4 &1391469853
 Transform:
   m_ObjectHideFlags: 0
@@ -13566,6 +13568,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5365393422656262792, guid: 5e21c94b11a910a4883b5bafe3fc275b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5365393422944356844, guid: 5e21c94b11a910a4883b5bafe3fc275b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -13596,6 +13603,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1702200085}
+    - target: {fileID: 5365393424268889561, guid: 5e21c94b11a910a4883b5bafe3fc275b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5365393424400758420, guid: 5e21c94b11a910a4883b5bafe3fc275b,
         type: 3}
       propertyPath: head

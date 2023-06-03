@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "GameEvent")]
 public class GameEvent : ScriptableObject
 {
+    public bool called = false;
     public List<GameEventListener> listeners = new List<GameEventListener>();
 
     public void Raise()

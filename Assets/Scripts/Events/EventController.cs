@@ -10,21 +10,55 @@ public class EventController : MonoBehaviour
 
     public void Start()
     {
-        Randomize();
+        RestartGame();
     }
-    public void Randomize()
+
+    private void RestartGame()
     {
-        Debug.Log("Randomization Start!");
+        for (int i = 0; i < events.Count; i++)
+        {
+            events[i].called = false;
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GetRandomEvent();
+        }
+    }
+
+    public GameEvent GetRandomEvent()
+    {
+        if (GameFinished())
+        {
+            Debug.Log("Game over");
+            return null;
+        }
+
+        int randomIndex = Random.Range(0, events.Count);
+        GameEvent randomEvent = events[randomIndex];
+        if (!randomEvent.called)
+        {
+            randomEvent.called = true;
+            Debug.Log(randomEvent.name);
+            return randomEvent;
+        }
+        else return GetRandomEvent();
+    }
+
+    private bool GameFinished()
+    {
+        int completedEvents = 0;
 
         for (int i = 0; i < events.Count; i++)
         {
-            GameEvent temp = events[i];
-            int randomIndex = Random.Range(i, events.Count);
-            events[i] = events[randomIndex];
-            events[randomIndex] = temp;
-
-            StartGameEvent(temp);
+            if (events[i].called)
+                completedEvents++;
         }
+
+        return completedEvents == events.Count;
     }
 
     public void StartGameEvent(GameEvent ev)
