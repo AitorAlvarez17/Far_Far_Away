@@ -266,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2190610866653460759}
   m_Layer: 0
-  m_Name: Flash_animated
+  m_Name: Flash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

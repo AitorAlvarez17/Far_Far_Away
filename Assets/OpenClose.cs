@@ -4,31 +4,55 @@ using UnityEngine;
 
 public class OpenClose : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public Animator animator;
-    public bool isOpen = false;
-
-    void Start()
+    [SerializeField] private Animator animator;
+    [SerializeField] private bool isOpen = false;
+    [SerializeField] private int cooldown;
+    public bool isCrazy = false;
+    private int counter = 0;
+ 
+    private void Start()
     {
         animator = GetComponent<Animator>();
     }
 
     public void OnButtonSwitch()
     {
-        isOpen = !isOpen;
+        if (!isCrazy)
+            isOpen = !isOpen;
     }
 
-    // Update is called once per frame
+    public void GoesCrazy()
+    {
+        isCrazy = true;
+    }
+
+    public void CalmsDown()
+    {
+        isCrazy = false;
+    }
+
     void Update()
     {
-
-        if (isOpen == true)
+        if (isOpen)
         {
             animator.Play("Open");
         }
-        else if(isOpen == false)
+        else if (!isOpen)
         {
-            animator.Play("Closing");
+            animator.Play("Close");
+        }
+        
+        if (isCrazy)
+        {
+
+            counter++;
+            if (counter == cooldown)
+            {
+                if (isOpen) isOpen = false;
+                else isOpen = true;
+
+                counter = 0;
+            }
         }
     }
 }

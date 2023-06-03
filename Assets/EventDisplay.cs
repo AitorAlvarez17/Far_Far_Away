@@ -4,9 +4,9 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SceneDisplay : MonoBehaviour
+public class EventDisplay : MonoBehaviour
 {
-    public SceneController controller;
+    public EventController controller;
     public TextMeshProUGUI text;
     // Start is called before the first frame update
     void Start()
