@@ -18,4 +18,19 @@ public class GameManager : MonoBehaviour
             gameOverGameEvent.Raise();
         }
     }
+
+    public void FlashStays()
+    {
+        withFlash = true;
+    }
+
+    public void FlashMinigameStart()
+    {
+
+    }
+
+    public void FlashMinigameEnd()
+    {
+
+    }
 }

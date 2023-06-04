@@ -43,6 +43,7 @@ public class EventController : MonoBehaviour
         {
             randomEvent.called = true;
             Debug.Log(randomEvent.name);
+            StartGameEvent(randomEvent);
             return randomEvent;
         }
         else return GetRandomEvent();
@@ -61,8 +62,8 @@ public class EventController : MonoBehaviour
         return completedEvents == events.Count;
     }
 
-    public void StartGameEvent(GameEvent ev)
+    public void StartGameEvent(GameEvent randomEvent)
     {
-        ev.Raise();
+        randomEvent.Raise();
     }
 }
