@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class EventController : MonoBehaviour
 {
     [SerializeField] public List<GameEvent> events;
+    [SerializeField] public GameEvent endEvent;
 
     public void Start()
     {
@@ -26,6 +27,11 @@ public class EventController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             GetRandomEvent();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            EndEvent();
         }
     }
 
@@ -65,5 +71,10 @@ public class EventController : MonoBehaviour
     public void StartGameEvent(GameEvent randomEvent)
     {
         randomEvent.Raise();
+    }
+
+    public void EndEvent()
+    {
+        endEvent.Raise();
     }
 }

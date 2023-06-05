@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6278263333929417342
+--- !u!1 &1357128316942805001
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6278263333929417340}
-  - component: {fileID: 6278263333929417318}
-  - component: {fileID: 6278263333929417313}
-  - component: {fileID: 6278263333929417312}
-  - component: {fileID: 6278263333929417315}
-  - component: {fileID: 6278263333929417314}
-  - component: {fileID: 6278263333929417325}
-  - component: {fileID: 6278263333929417324}
-  - component: {fileID: 6278263333929417327}
-  - component: {fileID: 6278263333929417326}
-  - component: {fileID: 6278263333929417321}
-  - component: {fileID: 6278263333929417320}
-  - component: {fileID: 6278263333929417334}
-  - component: {fileID: 6278263333929417329}
-  - component: {fileID: 6278263333929417328}
-  - component: {fileID: 6278263333929417331}
-  - component: {fileID: 6278263333929417330}
-  - component: {fileID: 6278263333929417341}
-  - component: {fileID: 6278263333929417319}
+  - component: {fileID: 1357128316942805003}
+  - component: {fileID: 1357128316942805009}
+  - component: {fileID: 1357128316942805014}
+  - component: {fileID: 1357128316942805015}
+  - component: {fileID: 1357128316942805012}
+  - component: {fileID: 1357128316942805013}
+  - component: {fileID: 1357128316942805018}
+  - component: {fileID: 1357128316942805019}
+  - component: {fileID: 1357128316942805016}
+  - component: {fileID: 1357128316942805017}
+  - component: {fileID: 1357128316942805022}
+  - component: {fileID: 1357128316942805023}
+  - component: {fileID: 1357128316942804993}
+  - component: {fileID: 1357128316942804998}
+  - component: {fileID: 1357128316942804999}
+  - component: {fileID: 1357128316942804996}
+  - component: {fileID: 1357128316942804997}
+  - component: {fileID: 1357128316942805002}
+  - component: {fileID: 1357128316942805008}
   m_Layer: 0
   m_Name: ConversationEventInfo
   m_TagString: Untagged
@@ -34,28 +34,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6278263333929417340
+--- !u!4 &1357128316942805003
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.949388, y: -3.9026868, z: 2.123525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6278263334889228827}
+  m_Father: {fileID: 1357128318161885292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6278263333929417318
+--- !u!114 &1357128316942805009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -66,15 +66,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 0
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 6ed4ca9a6ccd6134bbe9819dbbd30d4c, type: 3}
+  Icon: {fileID: 21300000, guid: 2a1b950ba3062a940a7eef3e236d1887, type: 3}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417313
+--- !u!114 &1357128316942805014
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -87,13 +87,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417312
+--- !u!114 &1357128316942805015
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -106,13 +106,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417315
+--- !u!114 &1357128316942805012
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -125,13 +125,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417314
+--- !u!114 &1357128316942805013
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -144,13 +144,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417325
+--- !u!114 &1357128316942805018
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -163,13 +163,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417324
+--- !u!114 &1357128316942805019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -182,13 +182,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417327
+--- !u!114 &1357128316942805016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -201,13 +201,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417326
+--- !u!114 &1357128316942805017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -220,13 +220,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417321
+--- !u!114 &1357128316942805022
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -239,13 +239,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417320
+--- !u!114 &1357128316942805023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -258,13 +258,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417334
+--- !u!114 &1357128316942804993
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -275,15 +275,15 @@ MonoBehaviour:
       m_Calls: []
   NodeID: 24
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 6ed4ca9a6ccd6134bbe9819dbbd30d4c, type: 3}
+  Icon: {fileID: 21300000, guid: 2a1b950ba3062a940a7eef3e236d1887, type: 3}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417329
+--- !u!114 &1357128316942804998
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -296,13 +296,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417328
+--- !u!114 &1357128316942804999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -315,13 +315,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417331
+--- !u!114 &1357128316942804996
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -344,15 +344,15 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 28
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 206fd495cc182bd479f06d8153c5b298, type: 3}
+  Icon: {fileID: 21300000, guid: 0c123f7f6b36ee24cbb4b782d13c6c66, type: 3}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417330
+--- !u!114 &1357128316942804997
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -377,13 +377,13 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417341
+--- !u!114 &1357128316942805002
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -406,15 +406,15 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 30
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 206fd495cc182bd479f06d8153c5b298, type: 3}
+  Icon: {fileID: 21300000, guid: 0c123f7f6b36ee24cbb4b782d13c6c66, type: 3}
   Audio: {fileID: 0}
---- !u!114 &6278263333929417319
+--- !u!114 &1357128316942805008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263333929417342}
+  m_GameObject: {fileID: 1357128316942805001}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
@@ -437,9 +437,9 @@ MonoBehaviour:
         m_CallState: 2
   NodeID: 31
   TMPFont: {fileID: 0}
-  Icon: {fileID: 21300000, guid: 6ed4ca9a6ccd6134bbe9819dbbd30d4c, type: 3}
+  Icon: {fileID: 21300000, guid: 2a1b950ba3062a940a7eef3e236d1887, type: 3}
   Audio: {fileID: 0}
---- !u!1 &6278263334889228773
+--- !u!1 &1357128318161886098
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -447,8 +447,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6278263334889228827}
-  - component: {fileID: 6278263334889228826}
+  - component: {fileID: 1357128318161885292}
+  - component: {fileID: 1357128318161885293}
   m_Layer: 0
   m_Name: DIA_Flash_GP
   m_TagString: Untagged
@@ -456,45 +456,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6278263334889228827
+--- !u!4 &1357128318161885292
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263334889228773}
+  m_GameObject: {fileID: 1357128318161886098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.949388, y: 3.9026868, z: -2.123525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6278263333929417340}
+  - {fileID: 1357128316942805003}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6278263334889228826
+--- !u!114 &1357128318161885293
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6278263334889228773}
+  m_GameObject: {fileID: 1357128318161886098}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 32
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":487.5,\"yPos\":267},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ayudarle.\",\"parentUIDs\":[24],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":205.5,\"yPos\":283},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dejarle
-    tirado.\",\"parentUIDs\":[24],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":364.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
-    est\xE1 pidiendo que le dispare a esos monstruos y rescate su nave.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":351.5,\"yPos\":152},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Con
-    suerte tengo una pistola laser pero quiero llegar ya a la playa. \xBFLe ayudo?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":505.5,\"yPos\":359},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MIL
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":486.5,\"yPos\":267},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ayudarle.\",\"parentUIDs\":[24],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":204.5,\"yPos\":283},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dejarle
+    tirado.\",\"parentUIDs\":[24],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":363.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    est\xE1 pidiendo que le dispare a esos monstruos y rescate su nave.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":350.5,\"yPos\":152},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Con
+    suerte tengo una pistola laser pero quiero llegar ya a la playa. \xBFLe ayudo?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":504.5,\"yPos\":359},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MIL
     GRACIAS! Venga, vamos dispara a esos bichos feos. Por cierto, me llamo Flash.
-    Que suerte haber encontrado a alguien como t\xFA.\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":515.5,\"yPos\":487},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dispara
-    a los enemigos que est\xE1n atacando la nave de Flash (puedes subir a la azotea).\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":183.5,\"yPos\":385},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Noo,
+    Que suerte haber encontrado a alguien como t\xFA.\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":514.5,\"yPos\":487},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dispara
+    a los enemigos que est\xE1n atacando la nave de Flash (puedes subir a la azotea).\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.5,\"yPos\":386},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Noo,
     nooooo. Snif. Pero a donde vas, nooo, mi naveeee. Snif. Pero no la dejes ah\xED
     y te me lleves. Snif snif. Eres muy mala gente que lo sepas. Snif. Y ahora yo
-    que hago?? Me va a caer una bronca muy grande. Snif snif.\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":198,\"yPos\":541},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
+    que hago?? Me va a caer una bronca muy grande. Snif snif.\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":197,\"yPos\":541},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
     de ya estoy en ruta de nuevo a la playa. Qu\xE9 cosas mas raras pasan en nuestra
     galaxia. Pero bueno, all\xE1 vamos.\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -502,38 +502,26 @@ MonoBehaviour:
   DefaultSprite: {fileID: 0}
   DefaultFont: {fileID: 0}
   NodeSerializedDataList:
-  - {fileID: 6278263333929417318}
-  - {fileID: 6278263333929417313}
-  - {fileID: 6278263333929417312}
-  - {fileID: 6278263333929417315}
-  - {fileID: 6278263333929417314}
-  - {fileID: 6278263333929417325}
-  - {fileID: 6278263333929417324}
-  - {fileID: 6278263333929417327}
-  - {fileID: 6278263333929417326}
-  - {fileID: 6278263333929417321}
-  - {fileID: 6278263333929417320}
-  - {fileID: 6278263333929417334}
-  - {fileID: 6278263333929417329}
-  - {fileID: 6278263333929417328}
-  - {fileID: 6278263333929417331}
-  - {fileID: 6278263333929417330}
-  - {fileID: 6278263333929417341}
-  - {fileID: 6278263333929417319}
+  - {fileID: 1357128316942805009}
+  - {fileID: 1357128316942805014}
+  - {fileID: 1357128316942805015}
+  - {fileID: 1357128316942805012}
+  - {fileID: 1357128316942805013}
+  - {fileID: 1357128316942805018}
+  - {fileID: 1357128316942805019}
+  - {fileID: 1357128316942805016}
+  - {fileID: 1357128316942805017}
+  - {fileID: 1357128316942805022}
+  - {fileID: 1357128316942805023}
+  - {fileID: 1357128316942804993}
+  - {fileID: 1357128316942804998}
+  - {fileID: 1357128316942804999}
+  - {fileID: 1357128316942804996}
+  - {fileID: 1357128316942804997}
+  - {fileID: 1357128316942805002}
+  - {fileID: 1357128316942805008}
   ContinueFont: {fileID: 0}
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: FlashController, Assembly-CSharp
-        m_MethodName: StopsTalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []

@@ -7,14 +7,10 @@ public class PropController : MonoBehaviour
     [SerializeField] private Animator animator;
     [SerializeField] private bool isOpen = false;
     [SerializeField] private int cooldown;
+    [SerializeField] private bool isLight = false;
     public bool isCrazy = false;
     private int counter = 0;
  
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-
     public void OnButtonSwitch()
     {
         if (!isCrazy)
@@ -29,27 +25,35 @@ public class PropController : MonoBehaviour
     public void CalmsDown()
     {
         isCrazy = false;
+        if (isLight) this.gameObject.SetActive(false);
     }
 
     void Update()
     {
-        if (isOpen)
+        if (isOpen && !isLight)
         {
             animator.Play("Open");
         }
-        else if (!isOpen)
+        else if (!isOpen && !isLight)
         {
             animator.Play("Close");
         }
         
         if (isCrazy)
         {
-
             counter++;
             if (counter == cooldown)
             {
-                if (isOpen) isOpen = false;
-                else isOpen = true;
+                if (!isLight)
+                {
+                    if (isOpen) isOpen = false;
+                    else isOpen = true;
+                }
+                else
+                {
+                    Light light = this.GetComponent<Light>();
+                    light.enabled = !light.enabled;
+                }
 
                 counter = 0;
             }
