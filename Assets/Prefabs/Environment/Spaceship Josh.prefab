@@ -1653,7 +1653,7 @@ Transform:
   - {fileID: 3198466163914222937}
   - {fileID: 6193487188621472870}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2737631567189534667
 GameObject:
@@ -1851,6 +1851,52 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -2606220294803438389, guid: dd15b80c2348c654296b75b3757f8340, type: 3}
+--- !u!1 &3170000227210565328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7940410019464033373}
+  - component: {fileID: 3873340560063566175}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Ship
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7940410019464033373
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170000227210565328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0064, z: 0.0217}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8852399865343171765}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &3873340560063566175
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3170000227210565328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06
+  m_Height: 0.17
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3344542777179487334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2372,7 +2418,7 @@ Transform:
   - {fileID: 1504834584863414779}
   - {fileID: 7901863913455462946}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3861074082220302342
 GameObject:
@@ -2407,7 +2453,7 @@ Transform:
   - {fileID: 2839387160395238759}
   - {fileID: 4130966040784418320}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3861074082717284846
 GameObject:
@@ -2443,7 +2489,7 @@ Transform:
   - {fileID: 8772019615306925620}
   - {fileID: 532146342342583542}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3861074083082590399
 GameObject:
@@ -2477,7 +2523,7 @@ Transform:
   - {fileID: 4305273371352795318}
   - {fileID: 3841954059782730022}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &3861074083082590396
 Rigidbody:
@@ -4457,7 +4503,7 @@ Transform:
   - {fileID: 8016969095294469573}
   - {fileID: 978863275822565291}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7091114050153751973
 GameObject:
@@ -5031,7 +5077,7 @@ Transform:
   m_Children:
   - {fileID: 1822331608622018299}
   m_Father: {fileID: 8852399865343171765}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7327828790428501872
 Animator:
@@ -5068,6 +5114,7 @@ MonoBehaviour:
   animator: {fileID: 7327828790428501872}
   isOpen: 0
   cooldown: 180
+  isLight: 0
   isCrazy: 0
 --- !u!1 &8065072269661775479
 GameObject:
@@ -5195,6 +5242,7 @@ Transform:
   m_LocalScale: {x: 102.23598, y: 102.23598, z: 102.23598}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 7940410019464033373}
   - {fileID: 7621369775095258721}
   - {fileID: 6196615445750537972}
   - {fileID: 7327828790428501875}
@@ -5952,7 +6000,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2d05bc81ecf0638448b295b1017c8442,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2d05bc81ecf0638448b295b1017c8442,
         type: 3}
@@ -6130,6 +6178,7 @@ MonoBehaviour:
   animator: {fileID: 4130966041806463160}
   isOpen: 0
   cooldown: 180
+  isLight: 0
   isCrazy: 0
 --- !u!4 &4530228455291486140 stripped
 Transform:

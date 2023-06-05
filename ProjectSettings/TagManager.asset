@@ -10,14 +10,15 @@ TagManager:
   - MiniWorldCamera
   - Water
   - Wall
+  - Ship
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Collisions
   - Water
   - UI
-  - 
+  - Ship Collisions
   - 
   - 
   - 
