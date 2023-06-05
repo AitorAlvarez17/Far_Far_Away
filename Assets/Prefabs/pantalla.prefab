@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7169782493347684889}
   - component: {fileID: 6343538911435336440}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Screen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 372486108272891710}
   m_LocalRotation: {x: 0.0008309758, y: 0.7071063, z: -0.00083106966, w: 0.7071063}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00007172225}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 0.09819426, y: 0.17998414, z: 5.124237}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35,7 +35,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 45, y: 90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1144.0269, y: 39.781067}
+  m_AnchoredPosition: {x: -0.1, y: -0.001}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &7169782493347684889
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 7239095729083922376}
   - component: {fileID: 2499756012311121043}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

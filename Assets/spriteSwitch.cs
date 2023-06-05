@@ -18,7 +18,7 @@ public class spriteSwitch : MonoBehaviour
         spriteNum = spriteList.Count - 1;
     }
 
-    void SwitchSpriteInOrder()
+    public void SwitchSpriteInOrder()
     {
         if(position < spriteNum)
         {
