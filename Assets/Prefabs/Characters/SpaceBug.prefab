@@ -231,10 +231,11 @@ GameObject:
   m_Component:
   - component: {fileID: 7385400773496299289}
   - component: {fileID: 7385400774230035276}
-  - component: {fileID: 7385400774230035275}
   - component: {fileID: 7385400774230035277}
+  - component: {fileID: 7385400774230035275}
   - component: {fileID: 738302072472029355}
   - component: {fileID: 7735246715766188505}
+  - component: {fileID: 1817744801349059488}
   m_Layer: 0
   m_Name: SpaceBug
   m_TagString: Untagged
@@ -271,21 +272,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7385400774230035275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7385400773496299270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9683a5c60b2a2342b87e122904235fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spaceBugKill: {fileID: 11400000, guid: 505de8577489c204fa2b31950868fbd2, type: 2}
-  gameManager: {fileID: 0}
-  isAttacking: 0
 --- !u!114 &7385400774230035277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,6 +303,21 @@ MonoBehaviour:
   OnExit:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7385400774230035275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7385400773496299270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9683a5c60b2a2342b87e122904235fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spaceBugKill: {fileID: 11400000, guid: 505de8577489c204fa2b31950868fbd2, type: 2}
+  gameManager: {fileID: 0}
+  isAttacking: 0
 --- !u!114 &738302072472029355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,6 +383,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameEvent: {fileID: 11400000, guid: 79a4fe9c48c6ac04eb03b756be354464, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7385400773496299270}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1817744801349059488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7385400773496299270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b09fc6c2a81c4a45aff81728e01ba5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: dfc9903ab8f1c7540a1d8d79fde2efa9, type: 2}
   response:
     m_PersistentCalls:
       m_Calls:

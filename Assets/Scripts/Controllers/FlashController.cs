@@ -22,6 +22,11 @@ public class FlashController : MonoBehaviour
         transform.position = startPosition;
     }
 
+    public void Leaves()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     public void GoesAzotea()
     {
         if (!gameManager.withFlash) return;
