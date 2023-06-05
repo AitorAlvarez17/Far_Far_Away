@@ -386,6 +386,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorController: {fileID: 709978526}
+  startPosition: {x: 2.125165, y: 1.221837, z: -3.532082}
+  azoteaPosition: {x: 4.8, y: 9, z: -3.5}
+  azoteaRotation: {x: 0, y: 0.9612617, z: 0, w: -0.27563736}
 --- !u!114 &709978531
 MonoBehaviour:
   m_ObjectHideFlags: 0
