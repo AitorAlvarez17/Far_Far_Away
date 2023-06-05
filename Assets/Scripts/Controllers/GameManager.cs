@@ -46,11 +46,14 @@ public class GameManager : MonoBehaviour
     private int shipHealth = 3;
     private float timer = 0;
 
+    [SerializeField] public ParticleSystem hyperspace;
+
     private void Start()
     {
         tutorialCompleted = false;
         eventInCourse = false;
         timer = 0;
+        hyperspace.Stop();
 
         RepositionPlayer();
 
@@ -112,6 +115,7 @@ public class GameManager : MonoBehaviour
 
         if (timer > cooldownForEvent)
         {
+            hyperspace.Stop();
             eventController.GetRandomEvent();
             eventInCourse = true;
 
