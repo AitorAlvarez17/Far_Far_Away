@@ -50,15 +50,17 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        tutorialCompleted = false;
+        //tutorialCompleted = false;
         eventInCourse = false;
         timer = 0;
         hyperspace.Stop();
 
-        RepositionPlayer();
 
-        // Tutorial comienza, lanzando primer dialogo
-        ConversationManager.Instance.StartConversation(TutorialConversation);
+        if (!tutorialCompleted)
+        {
+            RepositionPlayer();
+            ConversationManager.Instance.StartConversation(TutorialConversation);
+        }
     }
 
     private void RepositionPlayer()
@@ -70,10 +72,6 @@ public class GameManager : MonoBehaviour
         // Hay que quitarle el control para que no se vaya
     }
 
-    public void NextTutorialConversation()
-    {
-        ConversationManager.Instance.StartConversation(TutorialConversation2);
-    }
 
     private void Update()
     {
@@ -151,6 +149,11 @@ public class GameManager : MonoBehaviour
         tutorialCompleted = true;
     }
 
+    public void NextTutorialConversation()
+    {
+        StartCoroutine(StartNextDialogue(TutorialConversation2, 4f));
+    }
+
     /// FLASH ///
 
     public void FlashStays()
@@ -170,8 +173,20 @@ public class GameManager : MonoBehaviour
 
     public void NextFlashConversation()
     {
-        ConversationManager.Instance.StartConversation(FlashConversation2);
+        StartCoroutine(StartNextDialogue(FlashConversation2, 10f));
     }
+
+    private IEnumerator StartNextDialogue(NPCConversation nextDialogue, float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+
+        ConversationManager.Instance.EndConversation();
+        
+        yield return new WaitForSeconds(2f);
+
+        ConversationManager.Instance.StartConversation(nextDialogue);
+    }
+
     public void OnSpaceBugKill()
     {
         isFlashMinigame = true;

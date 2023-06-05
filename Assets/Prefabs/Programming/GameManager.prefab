@@ -86,21 +86,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  pilotPosition: {x: 8.752, y: 3.447, z: -2.341}
+  pilotPosition: {x: 8.274, y: 3.447, z: -2.341}
   pilotRotation: {x: 0, y: 0, z: 0, w: 0}
   TutorialConversation: {fileID: 0}
   TutorialConversation2: {fileID: 0}
   FlashConversation: {fileID: 0}
   FlashConversation2: {fileID: 0}
+  FlashConversationMinigameWin: {fileID: 0}
+  FlashConversationMinigameLose: {fileID: 0}
   eventController: {fileID: 0}
   gameOverGameEvent: {fileID: 11400000, guid: e0ded9986dba2fe44af5b0c6475e039c, type: 2}
   flashLeavesGameEvent: {fileID: 11400000, guid: 79a4fe9c48c6ac04eb03b756be354464,
+    type: 2}
+  flashMinigameEndGameEvent: {fileID: 11400000, guid: dfc9903ab8f1c7540a1d8d79fde2efa9,
     type: 2}
   tutorialCompleted: 0
   eventInCourse: 0
   cooldownForEvent: 20
   enemyCounter: 0
+  timeToKillBugs: 10
+  speed: 0
+  timeToFindBatteries: 30
   withFlash: 0
+  hyperspace: {fileID: 0}
 --- !u!114 &2151106083952712461
 MonoBehaviour:
   m_ObjectHideFlags: 0

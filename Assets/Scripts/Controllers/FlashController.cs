@@ -29,8 +29,6 @@ public class FlashController : MonoBehaviour
 
     public void GoesAzotea()
     {
-        if (!gameManager.withFlash) return;
-
         animatorController.Play("Scared");
 
         transform.position = azoteaPosition;

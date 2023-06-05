@@ -1015,6 +1015,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 709978530}
+        m_TargetAssemblyTypeName: FlashController, Assembly-CSharp
+        m_MethodName: GoesAzotea
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 29
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
@@ -1619,7 +1631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentIDCounter: 18
+  CurrentIDCounter: 21
   json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Otro
     d\xEDa menos de curro, por fin. Que largo se me ha hecho el d\xEDa. Pero ahora
     tocaaa... \xA1PLAYA!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":349,\"yPos\":133},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
@@ -1641,7 +1653,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6343538910826363544}
+        m_TargetAssemblyTypeName: spriteSwitch, Assembly-CSharp
+        m_MethodName: SwitchSpriteInOrder
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &476623131
 Transform:
   m_ObjectHideFlags: 0
@@ -2506,7 +2530,7 @@ Transform:
   - {fileID: 8164705572995114005}
   - {fileID: 8164705573361216241}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &640122130
 PrefabInstance:
@@ -3469,6 +3493,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1702200088}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: NextTutorialConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 8
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 2a1b950ba3062a940a7eef3e236d1887, type: 3}
@@ -4039,10 +4075,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 47
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":44},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":445.5,\"yPos\":26},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
-    puede ser!\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":174,\"yPos\":187},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Menos
-    mal Venus!! Al fin he llegado.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":434,\"yPos\":185},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
-    fin!! Mis queridas vaciones!!!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":437,\"yPos\":297},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Siiii!!!
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":false}],\"NodeUID\":44},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    puede ser!\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":77.5,\"yPos\":183},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Menos
+    mal Venus!! Al fin he llegado.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":337.5,\"yPos\":181},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Por
+    fin!! Mis queridas vaciones!!!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":340.5,\"yPos\":293},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Siiii!!!
     Bien!!! Muchas gracias se\xF1or!! Gracias a ti mi maestro no se enfadar\xE1 conmigo.\",\"parentUIDs\":[45],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -4154,7 +4190,7 @@ MonoBehaviour:
   Event:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1702200088}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: TutorialCompleted
         m_Mode: 1
@@ -4739,12 +4775,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 18
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":523,\"yPos\":312},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pulsar
-    bot\xF3n.\",\"parentUIDs\":[12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":178,\"yPos\":308},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
-    hacer nada.\",\"parentUIDs\":[12],\"SpeechUID\":-1}],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"buttonClick\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bua,
-    menudo viaje me espera por delante. Tendr\xE9 que arrancar la nave primero.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"buttonClick\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":336,\"yPos\":153},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQuiz\xE1s
-    si pulso los botones parpadeando la encender\xE9?\",\"parentUIDs\":[0,16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":526,\"yPos\":404},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Woo!
-    \xA1Rumbo a Venus!\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182,\"yPos\":397},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hm...\\n\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":523,\"yPos\":546},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estaremos
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":14}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":484,\"yPos\":36},\"ID\":13,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Pulsar
+    bot\xF3n.\",\"parentUIDs\":[12],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":16}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":139,\"yPos\":32},\"ID\":15,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    hacer nada.\",\"parentUIDs\":[12],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":310,\"yPos\":-254},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bua,
+    menudo viaje me espera por delante. Tendr\xE9 que arrancar la nave primero.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":13},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":15}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":297,\"yPos\":-123},\"ID\":12,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQuiz\xE1s
+    si pulso los botones parpadeando la encender\xE9?\",\"parentUIDs\":[0,16],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":17}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":487,\"yPos\":128},\"ID\":14,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1Woo!
+    \xA1Rumbo a Venus!\",\"parentUIDs\":[13],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":12}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":143,\"yPos\":121},\"ID\":16,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hm...\\n\",\"parentUIDs\":[15],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":484,\"yPos\":270},\"ID\":17,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Estaremos
     ah\xED en unas tres horitas si todo va bien.\",\"parentUIDs\":[14],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -4762,7 +4798,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1702200088}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: TutorialCompleted
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1023976848
 Transform:
   m_ObjectHideFlags: 0
@@ -5573,16 +5621,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 32
-  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":470.5,\"yPos\":147},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ayudarle.\",\"parentUIDs\":[24],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":188.5,\"yPos\":163},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dejarle
-    tirado.\",\"parentUIDs\":[24],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":347.5,\"yPos\":-98},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
-    est\xE1 pidiendo que le dispare a esos monstruos y rescate su nave.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":334.5,\"yPos\":32},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Con
-    suerte tengo una pistola laser pero quiero llegar ya a la playa. \xBFLe ayudo?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":488.5,\"yPos\":241},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MIL
+  json: "{\"Options\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":28}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":472,\"yPos\":267},\"ID\":25,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ayudarle.\",\"parentUIDs\":[24],\"SpeechUID\":-1},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":30}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190,\"yPos\":283},\"ID\":27,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dejarle
+    tirado.\",\"parentUIDs\":[24],\"SpeechUID\":-1}],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":24}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    est\xE1 pidiendo que le dispare a esos monstruos y rescate su nave.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":27},{\"__type\":\"EditableOptionConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":25}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":336,\"yPos\":152},\"ID\":24,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Con
+    suerte tengo una pistola laser pero quiero llegar ya a la playa. \xBFLe ayudo?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":29}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":490,\"yPos\":360},\"ID\":28,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"MIL
     GRACIAS! Venga, vamos dispara a esos bichos feos. Por cierto, me llamo Flash.
-    Que suerte haber encontrado a alguien como t\xFA. Te espero en la azotea!\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":498.5,\"yPos\":367},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dispara
-    a los enemigos que est\xE1n atacando la nave de Flash (puedes subir a la azotea).\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":166.5,\"yPos\":266},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Noo,
+    Que suerte haber encontrado a alguien como t\xFA. Te espero en la azotea!\",\"parentUIDs\":[25],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":496,\"yPos\":488},\"ID\":29,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Dispara
+    a los enemigos que est\xE1n atacando la nave de Flash (puedes subir a la azotea).\",\"parentUIDs\":[28],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":168,\"yPos\":386},\"ID\":30,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Noo,
     nooooo. Snif. Pero a donde vas, nooo, mi naveeee. Snif. Pero no la dejes ah\xED
     y te me lleves. Snif snif. Eres muy mala gente que lo sepas. Snif. Y ahora yo
-    que hago?? Me va a caer una bronca muy grande. Snif snif.\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":181,\"yPos\":421},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
+    que hago?? Me va a caer una bronca muy grande. Snif snif.\",\"parentUIDs\":[27],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":182.5,\"yPos\":541},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Bueno,
     de ya estoy en ruta de nuevo a la playa. Qu\xE9 cosas mas raras pasan en nuestra
     galaxia. Pero bueno, all\xE1 vamos.\",\"parentUIDs\":[30],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
@@ -5615,19 +5663,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 709978530}
         m_TargetAssemblyTypeName: FlashController, Assembly-CSharp
-        m_MethodName: StopsTalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1702200088}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: FlashLeaves
+        m_MethodName: Talks
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7928,6 +7964,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1702200088}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: NextFlashConversation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   NodeID: 22
   TMPFont: {fileID: 0}
   Icon: {fileID: 21300000, guid: 0c123f7f6b36ee24cbb4b782d13c6c66, type: 3}
@@ -8050,17 +8098,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 32
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":322,\"yPos\":-191},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ding
-    dong!!\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nave\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":309,\"yPos\":53},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
-    qui\xE9n es?\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":306,\"yPos\":163},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ehhh...
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":31}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ding
+    dong!!\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nave\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":20}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":336,\"yPos\":266},\"ID\":19,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Hola,
+    qui\xE9n es?\",\"parentUIDs\":[31],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":21}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":333,\"yPos\":376},\"ID\":20,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ehhh...
     si ehhh... hola ehhh... mira, es que de golpe unos bichos muy feos han atacado
-    a mi nave y PUMMM, ya no va.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":313,\"yPos\":261},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
+    a mi nave y PUMMM, ya no va.\",\"parentUIDs\":[19],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":22}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":340,\"yPos\":474},\"ID\":21,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"No
     s\xE9 muy bien porqu\xE9 me habr\xE1n atacado, pero es la primera vez que viajo
-    solo y ya la he l\xEDado.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":315,\"yPos\":378},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFMe
+    solo y ya la he l\xEDado.\",\"parentUIDs\":[20],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":342,\"yPos\":591},\"ID\":22,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFMe
     podr\xEDas hacer el favor de quitarme los bichos de la nave y llevarme a la estaci\xF3n
     m\xE1s cercana, porfis? S\xF3lo tendr\xEDas dispararle a esos bichos raros y
     remolcarme. Puedo reparar tu nave si es necesario, se me da bastante bien, o
-    eso dice mi maestro.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":316.5,\"yPos\":-66},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Llaman
+    eso dice mi maestro.\",\"parentUIDs\":[21],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":19}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":343.5,\"yPos\":147},\"ID\":31,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Llaman
     a la nave? Qui\xE9n podr\xE1 ser en mitad del Espacio?\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -8087,31 +8135,7 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 709978530}
-        m_TargetAssemblyTypeName: FlashController, Assembly-CSharp
-        m_MethodName: StopsTalking
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1702200088}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: NextFlashConversation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!4 &1887815906
 Transform:
   m_ObjectHideFlags: 0
@@ -9257,6 +9281,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 290192729311623593, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.0032524331
+      objectReference: {fileID: 0}
+    - target: {fileID: 290192729311623593, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0032524331
+      objectReference: {fileID: 0}
+    - target: {fileID: 290192729311623593, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0032524331
+      objectReference: {fileID: 0}
+    - target: {fileID: 290192729311623593, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -9298,7 +9337,7 @@ PrefabInstance:
     - target: {fileID: 290192729311623593, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: 0.606
       objectReference: {fileID: 0}
     - target: {fileID: 290192729311623593, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
         type: 3}
@@ -9314,6 +9353,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566455283148326676, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: -289.841
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566455283148326676, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11.079506
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609917126353334857, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 410.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609917126353334857, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -158.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 3609917126353334857, guid: 6bd7fd2bb066d5c4597de60d06ef1148,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -329
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bd7fd2bb066d5c4597de60d06ef1148, type: 3}
@@ -9708,6 +9772,11 @@ PrefabInstance:
       objectReference: {fileID: 1887815905}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
+      propertyPath: tutorialCompleted
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
       propertyPath: FlashConversation2
       value: 
       objectReference: {fileID: 1226010112}
@@ -9721,12 +9790,6 @@ PrefabInstance:
       propertyPath: TutorialConversation2
       value: 
       objectReference: {fileID: 1023976847}
-    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
-        type: 3}
-      propertyPath: flashMinigameWinGameEvent
-      value: 
-      objectReference: {fileID: 11400000, guid: 70a1def35a1d7954db9676fdd3337cac,
-        type: 2}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: FlashConversationMinigameWin
@@ -10224,7 +10287,7 @@ PrefabInstance:
     - target: {fileID: 4559537711813749616, guid: c599ff3a6c0c162448cc2f4d92ed52d9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.752
+      value: 8.274
       objectReference: {fileID: 0}
     - target: {fileID: 4559537711813749616, guid: c599ff3a6c0c162448cc2f4d92ed52d9,
         type: 3}
@@ -11194,6 +11257,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: EventSystem
       objectReference: {fileID: 0}
+    - target: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
+        type: 3}
+      propertyPath: events.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
+        type: 3}
+      propertyPath: events.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f94a1981ceaa9449aad0ab263cbd7a3,
+        type: 2}
     - target: {fileID: 5948484567568595181, guid: 414532f80b5ab8340920706ae5a5fb75,
         type: 3}
       propertyPath: m_RootOrder
@@ -11436,7 +11510,7 @@ PrefabInstance:
     - target: {fileID: 7385400773496299289, guid: 1d0472d2f0ac07e4792b27efa2b3985c,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7385400773496299289, guid: 1d0472d2f0ac07e4792b27efa2b3985c,
         type: 3}

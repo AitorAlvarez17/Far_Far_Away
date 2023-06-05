@@ -16,8 +16,7 @@ public class SpaceBugController : MonoBehaviour
 
     public void OnHit()
     {
-        spaceBugKill.Raise();
-
+        spaceBugKill.Raise(); 
         this.gameObject.SetActive(false);
     }
 }
