@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 public class AsteroidController : MonoBehaviour
 {
     public List<GameObject> objectPrefabs; // Reference to the object prefab
+    public GameObject asteroidParent;
     public Vector3 spawnDirection; // Direction in which the objects will move
 
     public float spawnInterval = 1f; // Time interval between object spawns
@@ -29,7 +30,7 @@ public class AsteroidController : MonoBehaviour
     }
     void Update()
     {
-        SpawnObjects();
+        //SpawnObjects();
     }
 
     private IEnumerator SpawnObjects()
@@ -37,7 +38,7 @@ public class AsteroidController : MonoBehaviour
         while (true)
         {
             // Generate a random position on the plane
-            Vector3 spawnPosition = new Vector3(UnityEngine.Random.Range(-10f, 10f), 0f, UnityEngine.Random.Range(-10f, 10f));
+            Vector3 spawnPosition = new Vector3(0f, UnityEngine.Random.Range(-50f, 50f), UnityEngine.Random.Range(-50f, 50f));
             int index = 0;
 
             if (objectPrefabs.Count == 0)
@@ -50,13 +51,15 @@ public class AsteroidController : MonoBehaviour
                 index = UnityEngine.Random.Range(0, objectPrefabs.Count);
             }
             // Instantiate the object prefab at the random position
-            GameObject spawnedObject = Instantiate(objectPrefabs[index], spawnPosition, Quaternion.identity);
+            GameObject spawnedObject = Instantiate(objectPrefabs[index], spawnPosition, Quaternion.identity,asteroidParent.transform);
+            spawnedObject.transform.localScale *= UnityEngine.Random.Range(1.0f, 1.5f);
+            Vector3 velocity = spawnDirection.normalized * objectSpeed;
 
             // Set the initial velocity of the spawned object based on the spawn direction and speed
             Rigidbody objectRigidbody = spawnedObject.GetComponent<Rigidbody>();
             if (objectRigidbody != null)
             {
-                objectRigidbody.velocity = spawnDirection.normalized * objectSpeed;
+                objectRigidbody.velocity = velocity;
             }
 
             yield return new WaitForSeconds(spawnInterval);
