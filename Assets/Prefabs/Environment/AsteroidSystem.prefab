@@ -97,9 +97,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7010275935933723170}
   - component: {fileID: 3137241881005632531}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Destroyer
-  m_TagString: Untagged
+  m_TagString: AStdestroyer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -1861,7 +1861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7940410019464033373}
   - component: {fileID: 3873340560063566175}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider
   m_TagString: Ship
   m_Icon: {fileID: 0}

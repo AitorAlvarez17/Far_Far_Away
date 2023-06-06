@@ -38,7 +38,7 @@ public class AsteroidController : MonoBehaviour
         while (true)
         {
             // Generate a random position on the plane
-            Vector3 spawnPosition = new Vector3(0f, UnityEngine.Random.Range(-50f, 50f), UnityEngine.Random.Range(-50f, 50f));
+            Vector3 spawnPosition = new Vector3(100f, UnityEngine.Random.Range(-50f, 50f), UnityEngine.Random.Range(-50f, 50f));
             int index = 0;
 
             if (objectPrefabs.Count == 0)

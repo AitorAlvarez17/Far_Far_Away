@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5934742239366399603}
   - component: {fileID: 3300869690205199643}
   - component: {fileID: 6815363254593176578}
+  - component: {fileID: 638383187847797897}
   m_Layer: 7
   m_Name: asteroide5
-  m_TagString: Untagged
+  m_TagString: ASteroid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -115,3 +116,15 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8710995322953696162, guid: a81a747c1c08ac442a592e9f105130ee, type: 3}
+--- !u!114 &638383187847797897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2286664728640294902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6be46c6dc6c4e541b1d79dff62751da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

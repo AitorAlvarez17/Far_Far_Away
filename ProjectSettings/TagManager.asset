@@ -11,6 +11,8 @@ TagManager:
   - Water
   - Wall
   - Ship
+  - ASteroid
+  - AStdestroyer
   layers:
   - Default
   - TransparentFX
