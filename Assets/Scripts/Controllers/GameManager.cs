@@ -18,12 +18,15 @@ public class GameManager : MonoBehaviour
     [SerializeField] public NPCConversation FlashConversationMinigameWin;
     [SerializeField] public NPCConversation FlashConversationMinigameLose;
     [SerializeField] public NPCConversation ShipMalfunctionConversation1;
+    [SerializeField] public NPCConversation ShipConversationMinigameWin;
+    [SerializeField] public NPCConversation ShipConversationMinigameLose;
 
     [Header("Events")]
     [SerializeField] EventController eventController;
     [SerializeField] GameEvent gameOverGameEvent;
     [SerializeField] GameEvent flashLeavesGameEvent;
     [SerializeField] GameEvent flashMinigameEndGameEvent;
+    [SerializeField] GameEvent shipMinigameEndGameEvent;
     [SerializeField] private bool tutorialCompleted = false;
     [SerializeField] private bool eventInCourse = false;
     [SerializeField] private float cooldownForEvent;
@@ -105,7 +108,7 @@ public class GameManager : MonoBehaviour
 
             if (batteriesTimer > timeToFindBatteries)
             {
-                Debug.Log("u lost");
+                ShipMalfunctionLose();
             }
 
             if (batteryCount >= 3)
@@ -116,7 +119,7 @@ public class GameManager : MonoBehaviour
                         return;
                 }
 
-                Debug.Log("u win");
+                ShipMalfunctionWin();
             }
         }
         /// GENERAL ///
@@ -173,7 +176,9 @@ public class GameManager : MonoBehaviour
     public void FlashStays()
     {
         withFlash = true;
-        ConversationManager.Instance.SetBool("hasFlash", true);
+
+        // Setting parameters for dialogue
+        //ConversationManager.Instance.SetBool("hasFlash", true);
     }
 
     public void FlashArrives()
@@ -233,7 +238,10 @@ public class GameManager : MonoBehaviour
     public void ShipMalfunctionStart()
     {
         isShipMalfunctionMinigame = true;
+
         ConversationManager.Instance.StartConversation(ShipMalfunctionConversation1);
+        ConversationManager.Instance.SetInt("shipHealth", shipHealth);
+        ConversationManager.Instance.SetBool("hasFlash", withFlash);
     }
 
     public void AddBattery()
@@ -241,4 +249,18 @@ public class GameManager : MonoBehaviour
         batteryCount++;
     }
 
+    private void ShipMalfunctionWin()
+    {
+        isShipMalfunctionMinigame = false;
+        ConversationManager.Instance.StartConversation(ShipConversationMinigameWin);
+        shipMinigameEndGameEvent.Raise();
+        EventCompleted();
+    }
+    private void ShipMalfunctionLose()
+    {
+        isShipMalfunctionMinigame = false;
+        ConversationManager.Instance.StartConversation(ShipConversationMinigameLose);
+        shipMinigameEndGameEvent.Raise();
+        LoseMinigame();
+    }
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2151106083952712460}
   - component: {fileID: 2151106083952712461}
   - component: {fileID: 1702200090}
+  - component: {fileID: 1702200092}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -95,13 +96,17 @@ MonoBehaviour:
   FlashConversationMinigameWin: {fileID: 0}
   FlashConversationMinigameLose: {fileID: 0}
   ShipMalfunctionConversation1: {fileID: 0}
+  ShipConversationMinigameWin: {fileID: 0}
+  ShipConversationMinigameLose: {fileID: 0}
   eventController: {fileID: 0}
   gameOverGameEvent: {fileID: 11400000, guid: e0ded9986dba2fe44af5b0c6475e039c, type: 2}
   flashLeavesGameEvent: {fileID: 11400000, guid: 79a4fe9c48c6ac04eb03b756be354464,
     type: 2}
   flashMinigameEndGameEvent: {fileID: 11400000, guid: dfc9903ab8f1c7540a1d8d79fde2efa9,
     type: 2}
-  tutorialCompleted: 0
+  shipMinigameEndGameEvent: {fileID: 11400000, guid: cee4feb0f0dd0a444b8a7f7d35bfa6d7,
+    type: 2}
+  tutorialCompleted: 1
   eventInCourse: 0
   cooldownForEvent: 20
   enemyCounter: 0
@@ -161,6 +166,34 @@ MonoBehaviour:
       - m_Target: {fileID: 2151106083952712460}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: FlashArrives
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1702200092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151106083952712455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b09fc6c2a81c4a45aff81728e01ba5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 5f942955280c32041a9610adb94278bd, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2151106083952712460}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ShipMalfunctionStart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

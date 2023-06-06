@@ -25,7 +25,8 @@ public class PropController : MonoBehaviour
     public void CalmsDown()
     {
         isCrazy = false;
-        if (isLight) this.gameObject.SetActive(false);
+        if (!isLight) isOpen = false;
+        else this.gameObject.SetActive(false);
     }
 
     void Update()
