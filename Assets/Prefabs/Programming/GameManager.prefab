@@ -94,6 +94,7 @@ MonoBehaviour:
   FlashConversation2: {fileID: 0}
   FlashConversationMinigameWin: {fileID: 0}
   FlashConversationMinigameLose: {fileID: 0}
+  ShipMalfunctionConversation1: {fileID: 0}
   eventController: {fileID: 0}
   gameOverGameEvent: {fileID: 11400000, guid: e0ded9986dba2fe44af5b0c6475e039c, type: 2}
   flashLeavesGameEvent: {fileID: 11400000, guid: 79a4fe9c48c6ac04eb03b756be354464,
@@ -106,7 +107,11 @@ MonoBehaviour:
   enemyCounter: 0
   timeToKillBugs: 10
   speed: 0
-  timeToFindBatteries: 30
+  batterySlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  timeToFindBatteries: 120
   withFlash: 0
   hyperspace: {fileID: 0}
 --- !u!114 &2151106083952712461

@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public NPCConversation FlashConversation2;
     [SerializeField] public NPCConversation FlashConversationMinigameWin;
     [SerializeField] public NPCConversation FlashConversationMinigameLose;
+    [SerializeField] public NPCConversation ShipMalfunctionConversation1;
 
     [Header("Events")]
     [SerializeField] EventController eventController;
@@ -38,9 +39,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] public float speed = 0f;
 
     [Header("Ship Malfunction Minigame")]
+    [SerializeField] private List<BatterySlotController> batterySlots = new List<BatterySlotController>();
     private bool isShipMalfunctionMinigame = false;
-    [SerializeField] public float timeToFindBatteries = 30f;
+    [SerializeField] public float timeToFindBatteries = 120f;
     private float batteriesTimer = 0f;
+    private int batteryCount = 0;
 
     [HideInInspector] public bool withFlash = false;
     private int shipHealth = 3;
@@ -102,7 +105,18 @@ public class GameManager : MonoBehaviour
 
             if (batteriesTimer > timeToFindBatteries)
             {
-                // Lose minigame
+                Debug.Log("u lost");
+            }
+
+            if (batteryCount >= 3)
+            {
+                for (int i = 0; i < batterySlots.Count; i++)
+                {
+                    if (!batterySlots[i].hasBattery)
+                        return;
+                }
+
+                Debug.Log("u win");
             }
         }
         /// GENERAL ///
@@ -159,6 +173,7 @@ public class GameManager : MonoBehaviour
     public void FlashStays()
     {
         withFlash = true;
+        ConversationManager.Instance.SetBool("hasFlash", true);
     }
 
     public void FlashArrives()
@@ -215,5 +230,15 @@ public class GameManager : MonoBehaviour
 
 
     /// SHIP MALFUNCTION ///
+    public void ShipMalfunctionStart()
+    {
+        isShipMalfunctionMinigame = true;
+        ConversationManager.Instance.StartConversation(ShipMalfunctionConversation1);
+    }
+
+    public void AddBattery()
+    {
+        batteryCount++;
+    }
 
 }
