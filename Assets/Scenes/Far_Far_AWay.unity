@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 1, g: 1, b: 1, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.02
@@ -2724,8 +2724,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 41
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":363.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Menos
-    mal, ha ido por un pelo. Espero poder llegar pronto sin m\xE1s contratiempos.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":358,\"yPos\":212},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fiuf,
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":40}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":302.3,\"yPos\":247},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Menos
+    mal, ha ido por un pelo. Espero poder llegar pronto sin m\xE1s contratiempos.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":296.8,\"yPos\":437},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Fiuf,
     menos mal. Conduces muy bien se\xF1or. Siempre he confiado en ti.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -3200,13 +3200,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 21
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Otro
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":125.900024,\"yPos\":27},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Otro
     d\xEDa menos de curro, por fin. Que largo se me ha hecho el d\xEDa. Pero ahora
-    tocaaa... \xA1PLAYA!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":349,\"yPos\":133},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
+    tocaaa... \xA1PLAYA!\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":7}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":126.900024,\"yPos\":133},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
     por delante un viaje de por lo menos tres horas. Que pereza. Bueno, pero ahora
-    toca descansar, hac\xEDa demasiado que no ten\xEDa vacaciones.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":352,\"yPos\":240},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    toca descansar, hac\xEDa demasiado que no ten\xEDa vacaciones.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":8}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":129.900024,\"yPos\":240},\"ID\":7,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     est\xE1n esperando ah\xED mi mujer y mis hijas. \xA1Qu\xE9 ganas de verlas! Pero
-    sobretodo, menudas ganas tengo de estar tranquilo y relajado unos d\xEDas.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":352,\"yPos\":356},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1All\xE1
+    sobretodo, menudas ganas tengo de estar tranquilo y relajado unos d\xEDas.\",\"parentUIDs\":[6],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":129.900024,\"yPos\":356},\"ID\":8,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xA1All\xE1
     vamos! Camino a las playas de gas de Venus, el mejor sitio para irse de vacaciones.\",\"parentUIDs\":[7],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -10383,6 +10383,52 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!1 &1385601400 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7010275935428831572, guid: 7e195673bdf07f046b561eb84d4b610b,
+    type: 3}
+  m_PrefabInstance: {fileID: 111352723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1385601401 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7010275935428831573, guid: 7e195673bdf07f046b561eb84d4b610b,
+    type: 3}
+  m_PrefabInstance: {fileID: 111352723}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385601400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67f760716ea55f347a8ae6afe0054520, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1385601403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385601400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b09fc6c2a81c4a45aff81728e01ba5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b8391162429c0234aba87fb1c13f472f, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1385601401}
+        m_TargetAssemblyTypeName: AsteroidController, Assembly-CSharp
+        m_MethodName: StartEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1391469852 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
@@ -13808,11 +13854,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 44
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":363.5,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jope,
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":41}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":267.3,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Jope,
     este cacharro no va. Vaya rollo.Alerta! Alerta! Nos aproximamos a un campo de
-    asteroides.\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363,\"yPos\":151},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
+    asteroides.\\n\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":266.8,\"yPos\":151},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Me
     da a m\xED que no voy a llegar a la playa... Tendr\xE9 que llamar a mi mujer
-    para que me venga a buscar.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":363,\"yPos\":272},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"NOOO
+    para que me venga a buscar.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":266.8,\"yPos\":272},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"NOOO
     :(\",\"parentUIDs\":[41],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -14630,14 +14676,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CurrentIDCounter: 47
-  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":2}],\"NodeUID\":40},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":3}],\"NodeUID\":41},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":3}],\"NodeUID\":42},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":349,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alerta
-    Alerta, nos aproximamos a un campo de asteroides.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nave\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-26.5,\"yPos\":164},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh
-    no!! No quiero morir. Por favor se\xF1or haga algo!!!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":207.5,\"yPos\":162},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
-    la nave en perfectas condiciones, quiz\xE1s aguante un par de golpes.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":463.5,\"yPos\":163},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Llevo
-    peso extra, me ser\xE1 dif\xEDcil esquivar, pero alg\xFAn golpe aguantar\xE1.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":779.5,\"yPos\":152},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"La
-    nave no est\xE1 en condiciones, un solo choque podr\xEDa ser mortal.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":-28.5,\"yPos\":291},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ser\xE1
-    mejor que vaya al tim\xF3n de la nave y evite esos asteroides.\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":467.5,\"yPos\":294},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Porfis
-    porfis, no te choques ehhh!\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":773.5,\"yPos\":294},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Esto
+  json: "{\"Options\":[],\"Parameters\":[{\"__type\":\"EditableBoolParameter:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"BoolValue\":false},{\"__type\":\"EditableIntParameter:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"IntValue\":0}],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":2}],\"NodeUID\":40},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":false},{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":3}],\"NodeUID\":41},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true},{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":3}],\"NodeUID\":42},{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableIntCondition:#DialogueEditor\",\"ParameterName\":\"shipHealth\",\"CheckType\":0,\"RequiredValue\":1}],\"NodeUID\":43}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":408.3,\"yPos\":251},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Alerta
+    Alerta, nos aproximamos a un campo de asteroides.\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Nave\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":44}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":32.7999878,\"yPos\":393},\"ID\":40,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Oh
+    no!! No quiero morir. Por favor se\xF1or haga algo!!!\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":266.8,\"yPos\":391},\"ID\":41,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Tengo
+    la nave en perfectas condiciones, quiz\xE1s aguante un par de golpes.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":45}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":522.8,\"yPos\":392},\"ID\":42,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Llevo
+    peso extra, me ser\xE1 dif\xEDcil esquivar, pero alg\xFAn golpe aguantar\xE1.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[{\"__type\":\"EditableBoolCondition:#DialogueEditor\",\"ParameterName\":\"hasFlash\",\"CheckType\":0,\"RequiredValue\":true}],\"NodeUID\":46}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":838.8,\"yPos\":381},\"ID\":43,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"La
+    nave no est\xE1 en condiciones, un solo choque podr\xEDa ser mortal.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":30.7999878,\"yPos\":520},\"ID\":44,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Ser\xE1
+    mejor que vaya al tim\xF3n de la nave y evite esos asteroides.\",\"parentUIDs\":[40],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Josh\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":526.8,\"yPos\":523},\"ID\":45,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Porfis
+    porfis, no te choques ehhh!\",\"parentUIDs\":[42],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":832.8,\"yPos\":523},\"ID\":46,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Esto
     no pinta bien, que alguien nos salve!\",\"parentUIDs\":[43],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Flash\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -15640,6 +15686,11 @@ PrefabInstance:
       objectReference: {fileID: 476623130}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
+      propertyPath: AsteroidsConversation
+      value: 
+      objectReference: {fileID: 2131753445}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
       propertyPath: TutorialConversation2
       value: 
       objectReference: {fileID: 1023976847}
@@ -15683,6 +15734,16 @@ PrefabInstance:
       propertyPath: FlashConversationMinigameLose
       value: 
       objectReference: {fileID: 548415180}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
+      propertyPath: AsteroidsConversationMinigameWin
+      value: 
+      objectReference: {fileID: 311128149}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
+      propertyPath: AsteroidsConversationMinigameLose
+      value: 
+      objectReference: {fileID: 1996361265}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b44378da206868d44bf1ce69f5ebb836, type: 3}
 --- !u!23 &2252782922663291483
@@ -18048,7 +18109,7 @@ PrefabInstance:
         type: 3}
       propertyPath: events.Array.data[0]
       value: 
-      objectReference: {fileID: 11400000, guid: 5f942955280c32041a9610adb94278bd,
+      objectReference: {fileID: 11400000, guid: b8391162429c0234aba87fb1c13f472f,
         type: 2}
     - target: {fileID: 5948484567568595181, guid: 414532f80b5ab8340920706ae5a5fb75,
         type: 3}

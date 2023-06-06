@@ -20,6 +20,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] public NPCConversation ShipMalfunctionConversation1;
     [SerializeField] public NPCConversation ShipConversationMinigameWin;
     [SerializeField] public NPCConversation ShipConversationMinigameLose;
+    [SerializeField] public NPCConversation AsteroidsConversation;
+    [SerializeField] public NPCConversation AsteroidsConversationMinigameWin;
+    [SerializeField] public NPCConversation AsteroidsConversationMinigameLose;
 
     [Header("Events")]
     [SerializeField] EventController eventController;
@@ -27,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameEvent flashLeavesGameEvent;
     [SerializeField] GameEvent flashMinigameEndGameEvent;
     [SerializeField] GameEvent shipMinigameEndGameEvent;
+    [SerializeField] GameEvent AsteroidsEndGameEvent;
     [SerializeField] private bool tutorialCompleted = false;
     [SerializeField] private bool eventInCourse = false;
     [SerializeField] private float cooldownForEvent;
@@ -39,6 +43,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Asteroids Minigame")] // No se
     private bool isAsteroidsMinigame = false;
+    private float asteroidTimer = 0f;
+    public int asteroidHealth = 100;
+
     [SerializeField] public float speed = 0f;
 
     [Header("Ship Malfunction Minigame")]
@@ -46,6 +53,7 @@ public class GameManager : MonoBehaviour
     private bool isShipMalfunctionMinigame = false;
     [SerializeField] public float timeToFindBatteries = 120f;
     private float batteriesTimer = 0f;
+    [SerializeField] public float timeToCompleteAsteroids = 150f;
     private int batteryCount = 0;
 
     [HideInInspector] public bool withFlash = false;
@@ -98,7 +106,16 @@ public class GameManager : MonoBehaviour
         /// ASTEROIDS ///
         if (isAsteroidsMinigame)
         {
-            
+            asteroidTimer += Time.deltaTime;
+
+            if(asteroidTimer >= timeToCompleteAsteroids && asteroidHealth >0)
+            {
+                AsteroidsWin();
+            }
+            else if(asteroidTimer < timeToCompleteAsteroids && asteroidHealth <= 0)
+            {
+                AsteroidsLose();
+            }
         }
 
         /// SHIP MALFUNCTION ///
@@ -233,6 +250,13 @@ public class GameManager : MonoBehaviour
 
     /// ASTEROIDS ///
 
+    public void AsteroidsStart()
+    {
+        isAsteroidsMinigame = true;
+
+        ConversationManager.Instance.StartConversation(AsteroidsConversation);
+        
+    }
 
     /// SHIP MALFUNCTION ///
     public void ShipMalfunctionStart()
@@ -261,6 +285,26 @@ public class GameManager : MonoBehaviour
         isShipMalfunctionMinigame = false;
         ConversationManager.Instance.StartConversation(ShipConversationMinigameLose);
         shipMinigameEndGameEvent.Raise();
+        LoseMinigame();
+    }
+
+    public void AsteroidHit()
+    {
+        shipHealth -= 20;
+    }
+
+    private void AsteroidsWin()
+    {
+        isAsteroidsMinigame = false;
+        ConversationManager.Instance.StartConversation(AsteroidsConversationMinigameWin);
+        AsteroidsEndGameEvent.Raise();
+        EventCompleted();
+    }
+    private void AsteroidsLose()
+    {
+        isAsteroidsMinigame = false;
+        ConversationManager.Instance.StartConversation(AsteroidsConversationMinigameLose);
+        AsteroidsEndGameEvent.Raise();
         LoseMinigame();
     }
 }

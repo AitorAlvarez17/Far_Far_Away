@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 
 public class AsteroidController : MonoBehaviour
 {
+    public bool isActive = false;
     public List<GameObject> objectPrefabs; // Reference to the object prefab
     public GameObject asteroidParent;
     public Vector3 spawnDirection; // Direction in which the objects will move
@@ -21,7 +22,6 @@ public class AsteroidController : MonoBehaviour
     private void Start()
     {
         // Start spawning objects at the specified interval
-        spawnCoroutine = StartCoroutine(SpawnObjects());
     }
 
     private void OnDestroy()
@@ -33,7 +33,15 @@ public class AsteroidController : MonoBehaviour
     void Update()
     {
         //SpawnObjects();
+
+        if(isActive)
         UpdateParentPosition(shipSpeed);
+    }
+
+    public void StartEvent()
+    {
+        spawnCoroutine = StartCoroutine(SpawnObjects());
+        isActive = true;
     }
 
     private IEnumerator SpawnObjects()
@@ -42,7 +50,7 @@ public class AsteroidController : MonoBehaviour
         {
             
             // Generate a random position on the plane
-            Vector3 spawnPosition = new Vector3(300f, UnityEngine.Random.Range(-100f, 100f), UnityEngine.Random.Range(-100f, 100f));
+            Vector3 spawnPosition = new Vector3(150f, UnityEngine.Random.Range(-100f, 100f), UnityEngine.Random.Range(-100f, 100f));
             int index = 0;
 
             if (objectPrefabs.Count == 0)
