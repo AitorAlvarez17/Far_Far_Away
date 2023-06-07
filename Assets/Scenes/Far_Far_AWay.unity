@@ -15752,11 +15752,6 @@ PrefabInstance:
       objectReference: {fileID: 1111726457}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
-      propertyPath: timeToKillBugs
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
-        type: 3}
       propertyPath: EndConversation
       value: 
       objectReference: {fileID: 860023558}
@@ -15772,19 +15767,9 @@ PrefabInstance:
       objectReference: {fileID: 6343538910826363547}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
-      propertyPath: cooldownForEvent
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
-        type: 3}
       propertyPath: FlashConversation
       value: 
       objectReference: {fileID: 1887815905}
-    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
-        type: 3}
-      propertyPath: tutorialCompleted
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: FlashConversation2
