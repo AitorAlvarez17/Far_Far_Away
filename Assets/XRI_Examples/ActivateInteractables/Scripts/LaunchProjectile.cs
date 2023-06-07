@@ -17,9 +17,17 @@ namespace UnityEngine.XR.Content.Interaction
         [Tooltip("The speed at which the projectile is launched")]
         float m_LaunchSpeed = 1.0f;
 
+        [Header("Audio")]
+        [SerializeField]
+        [Tooltip("The hover audio source.")]
+        AudioSource m_AudioShoot;
+
         public void Fire()
         {
             GameObject newObject = Instantiate(m_ProjectilePrefab, m_StartPoint.position, m_StartPoint.rotation, null);
+            
+            if (m_AudioShoot != null)
+                m_AudioShoot.Play();
 
             if (newObject.TryGetComponent(out Rigidbody rigidBody))
                 ApplyForce(rigidBody);

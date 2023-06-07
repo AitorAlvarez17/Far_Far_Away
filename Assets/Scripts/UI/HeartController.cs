@@ -8,8 +8,13 @@ public class HeartController : MonoBehaviour
     [SerializeField] private GameObject heart2;
     [SerializeField] private GameObject heart3;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip loseHPSFX;
+
     public void DisplayHearts(int heartCounter)
     {
+        audioSource.PlayOneShot(loseHPSFX);
+
         switch (heartCounter)
         {
             case 3:
