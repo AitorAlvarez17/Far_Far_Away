@@ -6,6 +6,7 @@ public class Destroyer : MonoBehaviour
 {
     public GameObject gameObj;
     public GameManager controller;
+    AudioSource aSource;
     // Start is called before the first frame update
 
 
@@ -13,6 +14,7 @@ public class Destroyer : MonoBehaviour
     {
         gameObj = GameObject.Find("GameManager");
         controller = gameObj.GetComponent<GameManager>();
+        aSource = GetComponent<AudioSource>();
     }
     private void OnCollisionEnter(Collision collision)
     {
@@ -23,7 +25,7 @@ public class Destroyer : MonoBehaviour
         else if(collision.transform.tag == "Ship")
         {
             controller.AsteroidHit();
-            //play a sound like an explosion
+            aSource.PlayOneShot(aSource.clip);
             Destroy(gameObject);
         }
     }

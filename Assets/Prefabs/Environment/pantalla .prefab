@@ -408,9 +408,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteList:
-  - {fileID: 21300000, guid: a1ac7c5d9199ca44aa1ab46e0062c33c, type: 3}
-  - {fileID: 21300000, guid: ebbde59b71a9bfa49ab352c95fd11760, type: 3}
-  - {fileID: 21300000, guid: 1975ccd7d36ac96439b4090a0ed5dbb5, type: 3}
+  - {fileID: 21300000, guid: fa3e7da5f26801b438a34360e15cc2fe, type: 3}
+  - {fileID: 21300000, guid: 49ef1896c38b140448008c7799dd82a2, type: 3}
+  - {fileID: 21300000, guid: 834623159ca29f449a9feb726c41dff8, type: 3}
+  - {fileID: 21300000, guid: 8be311535c25f2741ab54c93f1e8dea2, type: 3}
   spriteNum: 0
   position: 0
 --- !u!114 &6343538910826363547
