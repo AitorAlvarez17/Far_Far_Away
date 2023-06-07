@@ -43,6 +43,11 @@ public class AsteroidController : MonoBehaviour
         spawnCoroutine = StartCoroutine(SpawnObjects());
         isActive = true;
     }
+    public void EndEvent()
+    {
+        isActive = false;
+        OnDestroy();
+    }
 
     private IEnumerator SpawnObjects()
     {

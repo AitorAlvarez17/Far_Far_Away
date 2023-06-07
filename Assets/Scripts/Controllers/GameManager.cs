@@ -47,9 +47,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Asteroids Minigame")]
     private bool isAsteroidsMinigame = false;
-    [SerializeField] public float timeToCompleteAsteroids = 150f;
-    private float asteroidTimer = 0f;
-    public int asteroidHealth = 100;
+    [SerializeField] public float timeToCompleteAsteroids = 60f;
+    public float asteroidTimer = 0f;
+    public int asteroidHealth = 3;
 
     [SerializeField] public float speed = 0f;
 
@@ -117,13 +117,17 @@ public class GameManager : MonoBehaviour
         if (isAsteroidsMinigame)
         {
             asteroidTimer += Time.deltaTime;
-
-            if(asteroidTimer >= timeToCompleteAsteroids && asteroidHealth >0)
+            //Debug.Log(asteroidTimer.ToString());
+            //Debug.Log("ITS HAPPENING");
+            if(asteroidTimer > timeToCompleteAsteroids && asteroidHealth >0)
             {
+                //Debug.Log("You win");
                 AsteroidsWin();
             }
-            else if(asteroidTimer < timeToCompleteAsteroids && asteroidHealth <= 0)
+            else if(asteroidHealth <= 0 && asteroidTimer < timeToCompleteAsteroids)
             {
+                Debug.Log("You Lose");
+                isAsteroidsMinigame = false;
                 AsteroidsLose();
             }
         }
@@ -279,7 +283,9 @@ public class GameManager : MonoBehaviour
         isAsteroidsMinigame = true;
 
         ConversationManager.Instance.StartConversation(AsteroidsConversation);
-        
+        ConversationManager.Instance.SetInt("shipHealth", shipHealth);
+        ConversationManager.Instance.SetBool("hasFlash", withFlash);
+
     }
 
     /// SHIP MALFUNCTION ///
@@ -317,7 +323,8 @@ public class GameManager : MonoBehaviour
 
     public void AsteroidHit()
     {
-        shipHealth -= 20;
+        Debug.Log("loosing one life");
+        asteroidHealth -= 1;
     }
 
     private void AsteroidsWin()
