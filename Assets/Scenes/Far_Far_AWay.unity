@@ -3215,7 +3215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &465462524
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3225,11 +3225,10 @@ AudioSource:
   m_GameObject: {fileID: 465462523}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 24300002, guid: 3fcdb23bde063e94fa0b60ccf87604d6,
-    type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6412f9af8266fb44ea7d532c2e787cd6, type: 3}
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4844c697fb0ecc84abe294112fec6708, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.714
+  m_Volume: 0.482
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -11457,12 +11456,6 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
---- !u!1 &1652677758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2151106083952712455, guid: b44378da206868d44bf1ce69f5ebb836,
-    type: 3}
-  m_PrefabInstance: {fileID: 2151106085650126868}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1653257557
 GameObject:
   m_ObjectHideFlags: 0
@@ -12117,7 +12110,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2151106085650126868}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652677758}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3138a126bbad7a145af790bdf262bb22, type: 3}
@@ -12129,7 +12122,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2151106085650126868}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652677758}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 403efda511d335c4a865b0a1f33cc9e0, type: 3}
@@ -12141,7 +12134,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2151106085650126868}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652677758}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00ce2ae911c344047b3b452b988a9387, type: 3}
@@ -12153,40 +12146,12 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2151106085650126868}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652677758}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 365422d920103d1468a5c141f6650ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1702200093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652677758}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b09fc6c2a81c4a45aff81728e01ba5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameEvent: {fileID: 11400000, guid: 8a4c3e1b624ed9a47a3c2f81cab3df5f, type: 2}
-  response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1702200088}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: EndGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1727133640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2125917859162553645, guid: ed4b54014a7b23047a3467d7414a8013,
@@ -15788,7 +15753,7 @@ PrefabInstance:
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: timeToKillBugs
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
@@ -15808,7 +15773,7 @@ PrefabInstance:
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: cooldownForEvent
-      value: 10
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
@@ -15818,18 +15783,13 @@ PrefabInstance:
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: tutorialCompleted
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: FlashConversation2
       value: 
       objectReference: {fileID: 1226010112}
-    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
-        type: 3}
-      propertyPath: timeToFindBatteries
-      value: 120
-      objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: TutorialConversation

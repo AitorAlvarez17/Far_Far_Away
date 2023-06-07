@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2151106083952712461}
   - component: {fileID: 1702200090}
   - component: {fileID: 1702200092}
+  - component: {fileID: 1702200093}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -89,6 +90,7 @@ MonoBehaviour:
   player: {fileID: 0}
   pilotPosition: {x: 8.274, y: 3.447, z: -2.341}
   pilotRotation: {x: 0, y: 0, z: 0, w: 0}
+  heartController: {fileID: 0}
   TutorialConversation: {fileID: 0}
   TutorialConversation2: {fileID: 0}
   FlashConversation: {fileID: 0}
@@ -98,6 +100,10 @@ MonoBehaviour:
   ShipMalfunctionConversation1: {fileID: 0}
   ShipConversationMinigameWin: {fileID: 0}
   ShipConversationMinigameLose: {fileID: 0}
+  AsteroidsConversation: {fileID: 0}
+  AsteroidsConversationMinigameWin: {fileID: 0}
+  AsteroidsConversationMinigameLose: {fileID: 0}
+  EndConversation: {fileID: 0}
   eventController: {fileID: 0}
   gameOverGameEvent: {fileID: 11400000, guid: e0ded9986dba2fe44af5b0c6475e039c, type: 2}
   flashLeavesGameEvent: {fileID: 11400000, guid: 79a4fe9c48c6ac04eb03b756be354464,
@@ -106,11 +112,14 @@ MonoBehaviour:
     type: 2}
   shipMinigameEndGameEvent: {fileID: 11400000, guid: cee4feb0f0dd0a444b8a7f7d35bfa6d7,
     type: 2}
-  tutorialCompleted: 1
+  AsteroidsEndGameEvent: {fileID: 0}
+  tutorialCompleted: 0
   eventInCourse: 0
-  cooldownForEvent: 20
+  cooldownForEvent: 30
   enemyCounter: 0
   timeToKillBugs: 10
+  timeToCompleteAsteroids: 150
+  asteroidHealth: 100
   speed: 0
   batterySlots:
   - {fileID: 0}
@@ -194,6 +203,34 @@ MonoBehaviour:
       - m_Target: {fileID: 2151106083952712460}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ShipMalfunctionStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1702200093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2151106083952712455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b09fc6c2a81c4a45aff81728e01ba5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 8a4c3e1b624ed9a47a3c2f81cab3df5f, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2151106083952712460}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EndGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
