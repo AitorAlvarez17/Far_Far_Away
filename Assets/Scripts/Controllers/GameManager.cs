@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public NPCConversation AsteroidsConversation;
     [SerializeField] public NPCConversation AsteroidsConversationMinigameWin;
     [SerializeField] public NPCConversation AsteroidsConversationMinigameLose;
+    [SerializeField] public NPCConversation EndConversation;
 
     [Header("Events")]
     [SerializeField] EventController eventController;
@@ -43,6 +44,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Asteroids Minigame")] // No se
     private bool isAsteroidsMinigame = false;
+    [SerializeField] public float timeToCompleteAsteroids = 150f;
     private float asteroidTimer = 0f;
     public int asteroidHealth = 100;
 
@@ -53,14 +55,15 @@ public class GameManager : MonoBehaviour
     private bool isShipMalfunctionMinigame = false;
     [SerializeField] public float timeToFindBatteries = 120f;
     private float batteriesTimer = 0f;
-    [SerializeField] public float timeToCompleteAsteroids = 150f;
     private int batteryCount = 0;
 
     [HideInInspector] public bool withFlash = false;
     private int shipHealth = 3;
     private float timer = 0;
-
+    
+    [Header("Particles")]
     [SerializeField] public ParticleSystem hyperspace;
+    // add explosion particles
 
     private void Start()
     {
@@ -177,6 +180,11 @@ public class GameManager : MonoBehaviour
         LoseHealth();
     }
 
+    public void EndGame()
+    {
+        ConversationManager.Instance.StartConversation(EndConversation);
+    }
+
     /// TUTORIAL ///
     public void TutorialCompleted()
     {
@@ -243,6 +251,8 @@ public class GameManager : MonoBehaviour
     private void LoseFlashMinigame()
     {
         ConversationManager.Instance.StartConversation(FlashConversationMinigameLose);
+        ConversationManager.Instance.SetInt("shipHealth", shipHealth);
+
         flashMinigameEndGameEvent.Raise();
         LoseMinigame();
     }
@@ -277,6 +287,7 @@ public class GameManager : MonoBehaviour
     {
         isShipMalfunctionMinigame = false;
         ConversationManager.Instance.StartConversation(ShipConversationMinigameWin);
+        ConversationManager.Instance.SetBool("hasFlash", withFlash);
         shipMinigameEndGameEvent.Raise();
         EventCompleted();
     }
@@ -284,6 +295,8 @@ public class GameManager : MonoBehaviour
     {
         isShipMalfunctionMinigame = false;
         ConversationManager.Instance.StartConversation(ShipConversationMinigameLose);
+        ConversationManager.Instance.SetInt("shipHealth", shipHealth);
+        ConversationManager.Instance.SetBool("hasFlash", withFlash);
         shipMinigameEndGameEvent.Raise();
         LoseMinigame();
     }

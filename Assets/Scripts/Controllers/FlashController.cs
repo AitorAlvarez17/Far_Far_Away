@@ -35,6 +35,14 @@ public class FlashController : MonoBehaviour
         transform.rotation = azoteaRotation;
     }
 
+    public void GoesBackInShip()
+    {
+        animatorController.Play("Idle");
+
+        transform.position = asteroidsPosition;
+        transform.rotation = asteroidsRotation;
+    }
+
     public void Asteroids()
     {
         if (!gameManager.withFlash) return;

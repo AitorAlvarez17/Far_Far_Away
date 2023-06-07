@@ -28,18 +28,13 @@ public class EventController : MonoBehaviour
         {
             GetRandomEvent();
         }
-
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            EndEvent();
-        }
     }
 
     public GameEvent GetRandomEvent()
     {
         if (GameFinished())
         {
-            Debug.Log("Game over");
+            EndEvent();
             return null;
         }
 
