@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] public GameObject player;
     [SerializeField] private Vector3 pilotPosition;
     [SerializeField] private Quaternion pilotRotation;
+    [SerializeField] private HeartController heartController;
 
     [Header("Dialogues")]
     [SerializeField] public NPCConversation TutorialConversation;
@@ -40,9 +41,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] public int enemyCounter = 0;
     [SerializeField] public float timeToKillBugs = 10f;
     private bool isFlashMinigame = false;
+    private bool FlashMinigameLost = false;
     private float bugTimer = 0f;
+    private bool lostLifeFromBugs = false;
 
-    [Header("Asteroids Minigame")] // No se
+    [Header("Asteroids Minigame")]
     private bool isAsteroidsMinigame = false;
     [SerializeField] public float timeToCompleteAsteroids = 150f;
     private float asteroidTimer = 0f;
@@ -100,8 +103,12 @@ public class GameManager : MonoBehaviour
         {
             bugTimer += Time.deltaTime;
 
-            if (bugTimer > timeToKillBugs)
+            if (bugTimer > timeToKillBugs && !lostLifeFromBugs)
             {
+                isFlashMinigame = false;
+                lostLifeFromBugs = true;
+                FlashMinigameLost = true;
+
                 LoseFlashMinigame();
             }
         }
@@ -163,6 +170,8 @@ public class GameManager : MonoBehaviour
     public void LoseHealth() 
     { 
         shipHealth--;
+        heartController.DisplayHearts(shipHealth);
+
         if (shipHealth == 0)
         {
             gameOverGameEvent.Raise();
@@ -171,6 +180,7 @@ public class GameManager : MonoBehaviour
 
     public void EventCompleted()
     {
+        timer = 0;
         eventInCourse = false;
     }
 
@@ -214,6 +224,8 @@ public class GameManager : MonoBehaviour
     {
         withFlash = false;
         flashLeavesGameEvent.Raise();
+        flashMinigameEndGameEvent.Raise();
+        EventCompleted();
     }
 
     public void NextFlashConversation()
@@ -234,15 +246,16 @@ public class GameManager : MonoBehaviour
 
     public void OnSpaceBugKill()
     {
-        isFlashMinigame = true;
+        if (!isFlashMinigame && !FlashMinigameLost) isFlashMinigame = true;
 
         enemyCounter++;
 
-        if (enemyCounter == 5) WinFlashMinigame();
+        if (enemyCounter == 5 && !FlashMinigameLost) WinFlashMinigame();
     }
 
     private void WinFlashMinigame()
     {
+        isFlashMinigame = false;
         ConversationManager.Instance.StartConversation(FlashConversationMinigameWin);
         flashMinigameEndGameEvent.Raise();
         EventCompleted();
@@ -250,6 +263,7 @@ public class GameManager : MonoBehaviour
     
     private void LoseFlashMinigame()
     {
+        ConversationManager.Instance.EndConversation();
         ConversationManager.Instance.StartConversation(FlashConversationMinigameLose);
         ConversationManager.Instance.SetInt("shipHealth", shipHealth);
 

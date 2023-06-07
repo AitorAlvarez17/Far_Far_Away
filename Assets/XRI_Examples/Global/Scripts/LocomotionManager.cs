@@ -278,7 +278,7 @@ namespace UnityEngine.XR.Content.Interaction
             SetTurnStyle(m_RightHandTurnStyle, false);
 
             if (m_ComfortMode != null)
-                m_ComfortMode.SetActive(m_EnableComfortMode);
+                m_ComfortMode.SetActive(!m_EnableComfortMode);
 
             m_DynamicMoveProvider.useGravity = m_UseGravity;
             m_TwoHandedGrabMoveProvider.useGravity = m_UseGravity;
