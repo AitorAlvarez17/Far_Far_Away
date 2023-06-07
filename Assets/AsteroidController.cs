@@ -11,12 +11,12 @@ public class AsteroidController : MonoBehaviour
     public GameObject asteroidParent;
     public Vector3 spawnDirection; // Direction in which the objects will move
 
-    public float spawnInterval = 1f; // Time interval between object spawns
-    public float objectSpeed = 5f; // Speed of the spawned objects
-    public float objectAngularSpeed = 2.5f;
+    [SerializeField]public float spawnInterval = 1f; // Time interval between object spawns
+    [SerializeField] public float objectSpeed = 5f; // Speed of the spawned objects
+    [SerializeField] public float objectAngularSpeed = 2.5f;
 
     private Coroutine spawnCoroutine; // Reference to the coroutine
-    public float shipSpeed = 5.0f;
+    [SerializeField] public float shipSpeed = 5.0f;
     Vector2 joystickVec;
 
     private void Start()
@@ -71,7 +71,7 @@ public class AsteroidController : MonoBehaviour
             GameObject spawnedObject = Instantiate(objectPrefabs[index], spawnPosition, Quaternion.identity, asteroidParent.transform);
             spawnedObject.transform.localScale *= UnityEngine.Random.Range(1.5f, 3f);
             spawnedObject.transform.rotation = UnityEngine.Random.rotation;
-            Vector3 velocity = spawnDirection.normalized * objectSpeed;
+            Vector3 velocity = spawnDirection.normalized * (objectSpeed * UnityEngine.Random.Range(1f, 1.5f));
 
             // Set the initial velocity of the spawned object based on the spawn direction and speed
             Rigidbody objectRigidbody = spawnedObject.GetComponent<Rigidbody>();

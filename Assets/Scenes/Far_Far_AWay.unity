@@ -735,6 +735,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7010275935428831573, guid: 7e195673bdf07f046b561eb84d4b610b,
         type: 3}
+      propertyPath: shipSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7010275935428831573, guid: 7e195673bdf07f046b561eb84d4b610b,
+        type: 3}
       propertyPath: asteroidParent
       value: 
       objectReference: {fileID: 956711208}
@@ -10648,6 +10653,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1385601405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385601400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b09fc6c2a81c4a45aff81728e01ba5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 6122131820fb2a140b03f29f35e8af46, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1385601401}
+        m_TargetAssemblyTypeName: AsteroidController, Assembly-CSharp
+        m_MethodName: EndEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1391469852 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
@@ -15784,6 +15817,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
+      propertyPath: asteroidHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
       propertyPath: EndConversation
       value: 
       objectReference: {fileID: 860023558}
@@ -15834,9 +15872,20 @@ PrefabInstance:
       objectReference: {fileID: 2131753445}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
+      propertyPath: AsteroidsEndGameEvent
+      value: 
+      objectReference: {fileID: 11400000, guid: 6122131820fb2a140b03f29f35e8af46,
+        type: 2}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
       propertyPath: TutorialConversation2
       value: 
       objectReference: {fileID: 1023976847}
+    - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
+        type: 3}
+      propertyPath: timeToCompleteAsteroids
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 2151106083952712460, guid: b44378da206868d44bf1ce69f5ebb836,
         type: 3}
       propertyPath: batterySlots.Array.data[0]
@@ -17745,7 +17794,7 @@ PrefabInstance:
     - target: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
         type: 3}
       propertyPath: events.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
         type: 3}
@@ -17757,13 +17806,13 @@ PrefabInstance:
         type: 3}
       propertyPath: events.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 5f942955280c32041a9610adb94278bd,
+      objectReference: {fileID: 11400000, guid: 8f94a1981ceaa9449aad0ab263cbd7a3,
         type: 2}
     - target: {fileID: 5948484567568595180, guid: 414532f80b5ab8340920706ae5a5fb75,
         type: 3}
       propertyPath: events.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: b8391162429c0234aba87fb1c13f472f,
+      objectReference: {fileID: 11400000, guid: 5f942955280c32041a9610adb94278bd,
         type: 2}
     - target: {fileID: 5948484567568595181, guid: 414532f80b5ab8340920706ae5a5fb75,
         type: 3}
@@ -17950,6 +17999,8 @@ MonoBehaviour:
   heart1: {fileID: 194149083}
   heart2: {fileID: 1990442364}
   heart3: {fileID: 564996052}
+  audioSource: {fileID: 0}
+  loseHPSFX: {fileID: 0}
 --- !u!4 &6356111647103270156
 Transform:
   m_ObjectHideFlags: 0
@@ -19603,6 +19654,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 194149084, guid: df697299801bb4a498edc2add7889928, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 564996053, guid: df697299801bb4a498edc2add7889928, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990442365, guid: df697299801bb4a498edc2add7889928, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2183870079282208092, guid: df697299801bb4a498edc2add7889928,
         type: 3}
       propertyPath: m_Name
